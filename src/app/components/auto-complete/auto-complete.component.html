@@ -1,0 +1,12 @@
+<div id="auto-complete">
+  <div>
+    <input class="input" [formControl]="val" [placeholder]="Placeholder">
+    <div [hidden]="false">
+
+      <div class="auto-list" *ngFor="let item of filterItems; let i=index">
+        <span>{{item.a}}</span>
+        <span>{{item.b}}</span>
+      </div>
+    </div>
+  </div>
+</div>
